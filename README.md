@@ -12,7 +12,7 @@ bash <(curl -Ls https://gitlab.com/sekgfw/sing-box-yg/-/raw/main/sb.sh)
 ```
 OR
 ```
-bash <(curl -Ls https://github.com/sekomene/sing-box-yg-argo-reality-tuic-hysteria/master/sb-translated.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/sekomene/sing-box-yg-argo-reality-tuic-hysteria/master/sb-translated.sh)
 ```
 
 ## Client
