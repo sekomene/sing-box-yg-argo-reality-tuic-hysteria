@@ -8,7 +8,7 @@
    
 ## Installer (Server)
 ```
-bash <(curl -Ls https://gitlab.com/rwkgyg/sing-box-yg/raw/main/sb.sh)
+bash <(curl -Ls https://gitlab.com/sekgfw/sing-box-yg/-/raw/main/sb.sh)
 ```
 OR
 ```
