@@ -2583,36 +2583,36 @@ echo -e "检测到最新 Sing-box-yg 脚本版本号：${yellow}${latestV}${plai
 echo -e "${yellow}$(curl -sL https://gitlab.com/rwkgyg/sing-box-yg/-/raw/main/version/version)${plain}"
 fi
 else
-echo -e "当前 Sing-box-yg 脚本版本号：${bblue}${latestV}${plain}"
-echo -e "请先选择 1 ，安装 Sing-box-yg 脚本"
+echo -e "Current Sing-box-yg script version number: ${bblue}${latestV}${plain}"
+echo -e "Please select 1 first to install the Sing-box-yg script"
 fi
 lapre
 if [ -f '/etc/s-box/sb.json' ]; then
 if [[ $inscore =~ ^[0-9.]+$ ]]; then
 if [ "${inscore}" = "${latcore}" ]; then
 echo
-echo -e "当前 Sing-box 最新正式版内核：${bblue}${inscore}${plain} (已安装)"
+echo -e "Current Sing-box latest official version kernel: ${bblue}${inscore}${plain} (installed)"
 echo
-echo -e "当前 Sing-box 最新测试版内核：${bblue}${precore}${plain} (可切换)"
+echo -e "Current Sing-box latest test version kernel: ${bblue}${precore}${plain} (switchable)"
 else
 echo
-echo -e "当前 Sing-box 已安装正式版内核：${bblue}${inscore}${plain}"
-echo -e "检测到最新 Sing-box 正式版内核：${yellow}${latcore}${plain} (可选择8进行更新)"
+echo -e "Current Sing-box Official version kernel installed: ${bblue}${inscore}${plain}"
+echo -e "The latest Sing-box official version kernel is detected: ${yellow}${latcore}${plain} (8 can be selected for update)"
 echo
-echo -e "当前 Sing-box 最新测试版内核：${bblue}${precore}${plain} (可切换)"
+echo -e "The latest Sing-box beta kernel: ${bblue}${precore}${plain} (switchable)"
 fi
 else
 if [ "${inscore}" = "${precore}" ]; then
 echo
-echo -e "当前 Sing-box 最新测试版内核：${bblue}${inscore}${plain} (已安装)"
+echo -e "The latest Sing-box beta kernel: ${bblue}${inscore}${plain} (installed)"
 echo
-echo -e "当前 Sing-box 最新正式版内核：${bblue}${latcore}${plain} (可切换)"
+echo -e "The latest Sing-box official version kernel: ${bblue}${latcore}${plain} (switchable)"
 else
 echo
-echo -e "当前 Sing-box 已安装测试版内核：${bblue}${inscore}${plain}"
-echo -e "检测到最新 Sing-box 测试版内核：${yellow}${precore}${plain} (可选择8进行更新)"
+echo -e "The latest Sing-box Installed beta kernel: ${bblue}${inscore}${plain}"
+echo -e "Detected the latest Sing-box beta kernel: ${yellow}${precore}${plain} (8 can be selected for update)"
 echo
-echo -e "当前 Sing-box 最新正式版内核：${bblue}${latcore}${plain} (可切换)"
+echo -e "Current Sing-box latest official kernel: ${bblue}${latcore}${plain} (switchable)"
 fi
 fi
 else
